@@ -9,6 +9,8 @@
   --basic-white: #FFFFFF;
   --basic-black: #000000;
 
+  --white-base-active: rgba(255, 255, 255, 0.5);;
+
   --special-darkblue: #161D29;
   --special-yellow: #FFBF47;
   --special-blue: #3BBCE3;
@@ -61,12 +63,12 @@ img {
 
 /*logo*/
 
-.logo-wrap {
+.main-header-logo {
   background-color: var(--basic-red);
   box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 }
 
-.logo-wrap:active {
+.main-header-logo:active {
   background-color: var(--special-error);
 }
 
@@ -100,7 +102,7 @@ img {
 }
 
 .order-menu a:active {
-  opacity: 0.5;
+  color: var(--white-base-active);
 }
 
 .order:active {
@@ -124,6 +126,7 @@ img {
 .caption {
   font-size: 16px;
   font-style: italic;
+  font-weight: normal;
   line-height: 23px;
   color: var(--basic-red);
 }
@@ -139,7 +142,7 @@ img {
   color: var(--basic-red);
 }
 
-.adres {
+.address {
   color: var(--basic-darkgrey);
   font-size: 14px;
 }
@@ -212,7 +215,7 @@ img {
 }
 
 .site-navigation a:active {
-  opacity: 0.5;
+  color: var(--white-base-active);
 }
 
 /*info*/
@@ -458,7 +461,7 @@ img {
 }
 
 .current-price {
-  color: var();
+  color: var(--basic-white);
 }
 
 .hover {
@@ -530,5 +533,9 @@ img {
 }
 
 .pop-up {
+  display: none;
+}
+
+.visually-hidden {
   display: none;
 }
