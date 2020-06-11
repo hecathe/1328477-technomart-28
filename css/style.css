@@ -118,6 +118,7 @@ img {
   margin: 0 auto;
   padding: 0 10px;
 }
+
 .header-order .container {
   display: flex;
   justify-content: space-between;
@@ -496,12 +497,12 @@ img {
   width: 478px;
 }
 
-.about-company .paragraph-1 {
+.paragraph-1 {
   margin: 0;
   margin-bottom: 26px;
 }
 
-.about-company .paragraph-2 {
+.paragraph-2 {
   margin: 0;
 }
 
@@ -913,7 +914,7 @@ img {
   background-color: var(--special-popup);
 }
 
-.btn-wrap .buttons {
+.buttons {
   font-size: 14px;
   line-height: 18px;
   text-align: center;
@@ -923,7 +924,7 @@ img {
   border: none;
 }
 
-.btn-wrap .btn-order-placement:active {
+.btn-order-placement:active {
   background-color: var(--special-error);
 }
 
@@ -934,7 +935,7 @@ img {
   text-align: center;
 }
 
-.btn-wrap .btn-continue-shopping {
+.btn-continue-shopping {
   background-color: var(--basic-white);
   color: var(--basic-black);
 }
