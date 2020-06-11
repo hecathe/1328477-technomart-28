@@ -95,12 +95,6 @@ img {
   font-size: 18px;
 }
 
-.main-navigation {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .header-order {
   width: 100%;
   height: 42px;
@@ -124,7 +118,6 @@ img {
   margin: 0 auto;
   padding: 0 10px;
 }
-
 .header-order .container {
   display: flex;
   justify-content: space-between;
@@ -180,7 +173,7 @@ img {
 
 /*header-content*/
 
-.header-content .container {
+.header-content {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -282,10 +275,10 @@ img {
 /*navigation*/
 
 .site-navigation {
-  width: 940px;
+  display: flex;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
-  min-height: 60px;
   list-style: none;
   background-color: var(--basic-darkgrey);
   box-shadow: inset 0px -5px 0px var(--basic-darksea);
@@ -651,6 +644,7 @@ img {
 }
 
 .catalog h2 {
+  height: 89px;
   grid-column: 1 / -1;
   margin: 0;
   font-size: 30px;
