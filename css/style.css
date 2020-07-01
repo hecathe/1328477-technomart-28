@@ -1434,7 +1434,7 @@ img {
   position: relative;
   display: block;
   cursor: pointer;
-  /*user-select: none;*/
+  user-select: none;
 }
 
 .filter-input-checkbox + label::before {
@@ -1767,8 +1767,6 @@ img {
   border: none;
 }
 
-outline
-
 /*about-products*/
 
 .about-products {
@@ -1880,7 +1878,7 @@ outline
 }
 
 .pop-up {
-  display: ;
+  display: none;
 }
 
 .pop-up-map {
