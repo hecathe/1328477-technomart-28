@@ -26,8 +26,8 @@
 
 
             <div class="order-menu">
-              <a class="order-boormarks" href="#">Закладки</a>
-              <a class="order-cart" href="#">Корзина</a>
+              <a class="order-bookmarks" href="#">Закладки: 0</a>
+              <a class="order-cart" href="#">Корзина: 0</a>
               <a class="order-button" href="#">Оформить заказ</a>
             </div>
           </div>
@@ -35,7 +35,7 @@
 
         <section class="container">
           <div class="header-content">
-            <h2 class="caption">Интернет-магазин строительных материалов и инструментов для ремонта</h2>
+            <h1 class="caption">Интернет-магазин строительных материалов и инструментов для ремонта</h2>
 
             <div class="contacts">
               <div class="phone-number">
@@ -83,8 +83,8 @@
     <main class="page-catalog">
       <section class="catalog container">
         <ul class="bread-crumbs">
-          <li>
-            <a href="index.html" class="visually-hidden">На главную</a>
+          <li class="to-home">
+            <a class="visually-hidden" href="index.html">На главную</a>
           </li>
           <li>
             <a href="catalog.html">Каталог</a>
@@ -100,28 +100,29 @@
         <h2>Перфораторы</h2>
 
         <section class="catalog-filter">
-          <h3 class="filter-caption background">Фильтр:</h3>
+          <h3 class="filter-caption filter-background">Фильтр:</h3>
           <form action="https://echo.htmlacademy.ru/" method="get">
 
-            <fieldset class="price">
+            <fieldset class="filter-price">
               <legend>Цена:</legend>
-              <div class="filter-price">
-                <div class="filter-range-container">
-                  <div class="filter-range">
-                    <div class="filter-range-scale">
-                      <div class="filter-range-bar"></div>
-                    </div>
-                    <button type="button" class="filter-range-btn min">Минимум</button>
-                    <button type="button" class="filter-range-btn max">Максимум</button>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
                   </div>
+                  <div class="toggle toggle-min" tabindex="0"></div>
+                  <div class="toggle toggle-max" tabindex="0"></div>
                 </div>
-              </div>
 
-              <div class="filter-price-interval">
-                <input type="text" name="min-interval" value="0" step="" id="min-interval">
-                <label for="min-interval">От -</label>
-                <input type="text" name="max-interval" value="30000" id="max-interval">
-                <label for="max-interval">До</label>
+                <div class="price-controls">
+                  <label class="min-price">
+                    <input type="number" name="min-price" value="0" step="100">
+                  </label>
+                  <div class="dash">_</div>
+                  <label class="max-price">
+                    <input type="number" name="max-price" value="30000" step="100">
+                  </label>
+                </div>
               </div>
             </fieldset>
 
@@ -164,27 +165,29 @@
                 </li>
               </ul>
             </fieldset>
-              <button type="submit" class="filter-btn">Показать</button>
+              <button class="filter-btn" type="submit">Показать</button>
           </form>
         </section>
 
         <div class="catalog-wrap">
-          <section class="catalog-sort background">
+          <section class="catalog-sort filter-background">
             <h3 class="filter-caption">Сортировка:</h3>
             <ul>
               <li><a href="#">по цене</a></li>
               <li><a href="#">по типу</a></li>
               <li><a href="#">по функционалу</a></li>
             </ul>
-            <button type="button" name="По возрастанию">По возрастанию</button>
-            <button type="button" name="По убыванию">По убыванию</button>
+            <button class="btn-triangle btn-triangle-up" type="button" aria-label="По возрастанию"></button>
+            <button class="btn-triangle btn-triangle-down" type="button" aria-label="По убыванию"></button>
           </section>
 
           <section class="catalog-grid">
             <h3 class="visually-hidden">Товары</h3>
             <ul class="catalog-list">
               <li class="catalog-item ">
-                <img src="img/bosch6000.png" width="144" height="128" alt="Перфоратор Bosch BFG 6000">
+                <div class="catalog-image">
+                  <img src="img/bosch6000.png" width="144" height="128" alt="Перфоратор Bosch BFG 6000">
+                </div>
                 <div class="hover">
                   <a href="#">Купить</a>
                   <button class="btn-in-bookmarks" type="button">В закладки</button>
@@ -197,7 +200,9 @@
               </li>
 
               <li class="catalog-item">
-                <img src="img/bosch6000.png" width="144" height="128" alt="Перфоратор Bosch BFG 6000">
+                <div class="catalog-image">
+                  <img src="img/bosch6000.png" width="144" height="128" alt="Перфоратор Bosch BFG 6000">
+                </div>
                 <div class="hover">
                   <a href="#">Купить</a>
                   <button class="btn-in-bookmarks" type="button">В закладки</button>
@@ -210,7 +215,9 @@
               </li>
 
               <li class="catalog-item">
-                <img src="img/bosch6000.png" width="144" height="128" alt="Перфоратор Bosch BFG 6000">
+                <div class="catalog-image">
+                  <img src="img/bosch6000.png" width="144" height="128" alt="Перфоратор Bosch BFG 6000">
+                </div>
                 <div class="hover">
                   <a href="#">Купить</a>
                   <button class="btn-in-bookmarks" type="button">В закладки</button>
@@ -223,7 +230,9 @@
               </li>
 
               <li class="catalog-item">
-                <img src="img/bosch3000.png" width="127" height="112" alt="Перфоратор Bosch BFG 3000">
+                <div class="catalog-image">
+                  <img src="img/bosch3000.png" width="127" height="112" alt="Перфоратор Bosch BFG 3000">
+                </div>
                 <div class="hover">
                   <a href="#">Купить</a>
                   <button class="btn-in-bookmarks" type="button">В закладки</button>
@@ -236,7 +245,9 @@
               </li>
 
               <li class="catalog-item">
-                <img src="img/bosch6000.png" width="144" height="128" alt="Перфоратор Bosch BFG 6000">
+                <div class="catalog-image">
+                  <img src="img/bosch6000.png" width="144" height="128" alt="Перфоратор Bosch BFG 6000">
+                </div>
                 <div class="hover">
                   <a href="#">Купить</a>
                   <button class="btn-in-bookmarks" type="button">В закладки</button>
@@ -249,7 +260,9 @@
               </li>
 
               <li class="catalog-item">
-                <img src="img/hammer-drill-bosch-bfg2000.png" width="127" height="112" alt="Перфоратор Bosch BFG 2000">
+                <div class="catalog-image">
+                  <img src="img/hammer-drill-bosch-bfg2000.png" width="127" height="112" alt="Перфоратор Bosch BFG 2000">
+                </div>
                 <div class="hover">
                   <a href="#">Купить</a>
                   <button class="btn-in-bookmarks" type="button">В закладки</button>
@@ -261,7 +274,9 @@
               </li>
 
               <li class="catalog-item">
-                <img src="img/bosch3000.png" width="127" height="112" alt="Перфоратор Bosch BFG 3000">
+                <div class="catalog-image">
+                  <img src="img/bosch3000.png" width="127" height="112" alt="Перфоратор Bosch BFG 3000">
+                </div>
                 <div class="hover">
                   <a href="#">Купить</a>
                   <button class="btn-in-bookmarks" type="button">В закладки</button>
@@ -273,7 +288,9 @@
               </li>
 
               <li class="catalog-item">
-                <img src="img/bosch6000.png" width="144" height="128" alt="Перфоратор Bosch BFG 6000">
+                <div class="catalog-image">
+                  <img src="img/bosch6000.png" width="144" height="128" alt="Перфоратор Bosch BFG 6000">
+                </div>
                 <div class="hover">
                   <a href="#">Купить</a>
                   <button class="btn-in-bookmarks" type="button">В закладки</button>
@@ -286,7 +303,9 @@
               </li>
 
               <li class="catalog-item">
-                <img src="img/hammer-drill-bosch-bfg2000.png" width="127" height="112" alt="Перфоратор Bosch BFG 2000">
+                <div class="catalog-image">
+                  <img src="img/hammer-drill-bosch-bfg2000.png" width="127" height="112" alt="Перфоратор Bosch BFG 2000">
+                </div>
                 <div class="hover">
                   <a href="#">Купить</a>
                   <button class="btn-in-bookmarks" type="button">В закладки</button>
@@ -304,13 +323,13 @@
             <li class="pagination-item current-page">
               <a href="#">1</a>
             </li>
-            <li class="pagination-item ">
+            <li class="pagination-item">
               <a href="#">2</a>
             </li>
-            <li class="pagination-item ">
+            <li class="pagination-item">
               <a href="#">3</a>
             </li>
-            <li class="pagination-item ">
+            <li class="pagination-item">
               <a href="#">Следующая</a>
             </li>
           </ul>
