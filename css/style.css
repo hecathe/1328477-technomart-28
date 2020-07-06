@@ -299,6 +299,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-left: 24px;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .phone-number {
@@ -343,8 +344,14 @@ input[type="radio"].visually-hidden {
   padding: 0;
 }
 
-.user-navigation {
+.user-block {
   position: relative;
+  width: 299px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.user-navigation {
   display: flex;
   align-items: center;
   height: 45px;
@@ -410,7 +417,8 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: column;
   align-items: center;
-  left: 845px;
+  top: 0;
+  left: 0;
 }
 
 .user-wrap {
