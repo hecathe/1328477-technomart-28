@@ -48,17 +48,17 @@
               <li class="sign-up"><a href="#">Регистрация</a></li>
             </ul>
 
-            <div class="profile">
+            <div class="profile visually-hidden">
               <div class="user-wrap">
                 <a class="user-pic" href="#" title="Профайл"><span class="visually-hidden">Профайл</span></a>
                 <a class="user-link" href="#">Равшан Джамшутович</a>
                 <a class="log-out-pic" href="#" title="Выход из личного кабинета"><span class="visually-hidden">Выход из личного кабинета</span></a>
               </div>
               <ul class="user-menu">
-                <li>
-                  <a href="#">Мои заказы</a>
+                <li class="orders">
+                  <a  href="#">Мои заказы</a>
                 </li>
-                <li>
+                <li class="">
                   <a href="#">Личный кабинет</a>
                 </li>
               </ul>
@@ -95,21 +95,23 @@
         </div>
 
         <article class="features-list slider">
-          <figure class="slider-item hammer-drill">
-            <figcaption>Перфораторы</figcaption>
-            <img src="img/hammer-drill.jpg" width="620" height="266" alt="Перфораторы">
-            <p>Настоящие мужские игрушки</p>
-
-          </figure>
           <figure class="slider-item drill visually-hidden">
             <figcaption>Дрели</figcaption>
             <img src="img/drill.jpg" width="620" height="266" alt="Дрели">
             <p>Соседям на радость!</p>
-
+          </figure>
+          <figure class="slider-item hammer-drill slide-current">
+            <figcaption>Перфораторы</figcaption>
+            <img src="img/hammer-drill.jpg" width="620" height="266" alt="Перфораторы">
+            <p>Настоящие мужские игрушки</p>
           </figure>
           <a class="button btn-hover" href="catalog.html">Открыть каталог</a>
-          <button type="button" class="gallery-button gallery-button-back" aria-label="Назад"></button>
-          <button type="button" class="gallery-button gallery-button-next" aria-label="Вперед"></button>
+          <button class="gallery-button gallery-button-back" type="button" aria-label="Назад"></button>
+          <button class="gallery-button gallery-button-next" type="button" aria-label="Вперед"></button>
+          <ul class="slider-indicators">
+            <li class="indicator-item"></li>
+            <li class="indicator-item current"></li>
+          </ul>
         </article>
 
         <div class="features-item sale">
@@ -133,22 +135,22 @@
               <div class="catalog-image">
                 <img src="img/hammer-drill-bosch-bfg9000.png" width="184" height="164" alt="Перфоратор Bosch BFG 9000">
               </div>
-                <div class="hover">
-                  <a href="#">Купить</a>
-                  <button class="btn-in-bookmarks" type="button">В закладки</button>
-                </div>
-                <a href="#">
-                  <h3>Перфоратор BOSCH BFG 9000</h3>
-                </a>
-                <span class="price old-price">32500 Р.</span>
-                <p class="price current-price">25500 Р.</p>
+              <div class="hover">
+                <a class="buy-btn" href="#">Купить</a>
+                <button class="btn-in-bookmarks" type="button">В закладки</button>
+              </div>
+              <a href="#">
+                <h3>Перфоратор BOSCH BFG 9000</h3>
+              </a>
+              <span class="price old-price">32500 Р.</span>
+              <p class="price current-price">25500 Р.</p>
             </li>
-            <li class="catalog-item">
+            <li class="catalog-item new">
               <div class="catalog-image">
                 <img src="img/hammer-drill-bosch-bfg3000.png" width="127" height="112" alt="Перфоратор Bosch BFG 3000">
               </div>
                 <div class="hover">
-                  <a href="#">Купить</a>
+                  <a class="buy-btn" href="#">Купить</a>
                   <button class="btn-in-bookmarks" type="button">В закладки</button>
                 </div>
                 <a href="#">
@@ -162,7 +164,7 @@
                 <img src="img/hammer-drill-bosch-bfg6000.png" width="144" height="128" alt="Перфоратор Bosch BFG 6000">
               </div>
                 <div class="hover">
-                  <a href="#">Купить</a>
+                  <a class="buy-btn" href="#">Купить</a>
                   <button class="btn-in-bookmarks" type="button">В закладки</button>
                 </div>
                 <a href="#">
@@ -171,18 +173,18 @@
               <span class="price old-price">30500 Р.</span>
               <p class="price current-price">25500 Р.</p>
             </li>
-            <li class="catalog-item">
+            <li class="catalog-item new">
               <div class="catalog-image">
                 <img src="img/hammer-drill-bosch-bfg2000.png" width="127" height="112" alt="Перфоратор Bosch BFG 2000">
               </div>
                 <div class="hover">
-                  <a href="#">Купить</a>
+                  <a class="buy-btn" href="#">Купить</a>
                   <button class="btn-in-bookmarks" type="button">В закладки</button>
                 </div>
                 <a href="#">
                   <h3>Перфоратор BOSCH BFG 2000</h3>
                 </a>
-              <p class="price">12500 Р.</p>
+              <p class="price common-price">12500 Р.</p>
             </li>
           </ul>
         </div>
@@ -310,7 +312,7 @@
           <a class="image-map" href="#">
             <img src="img/map.png" width="300" height="158" alt="Карта">
           </a>
-          <a class="button btn-hover" href="#">Заблудились? Напишите нам!</a>
+          <a class="write-us-btn button btn-hover" href="#">Заблудились? Напишите нам!</a>
         </section>
       </div>
     </main>
@@ -407,28 +409,29 @@
   <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
     <p class="write-us-field">
       <label for="letter-name">Ваше имя:</label>
-      <input type="text" name="name" placeholder="Имя Фамилия" id="letter-name">
+      <input class="name-field" type="text" name="name" placeholder="Имя Фамилия" id="letter-name">
     </p>
     <p class="write-us-field">
       <label for="letter-email">Ваш e-mail:</label>
-      <input type="email" name="email" placeholder="email@example.com" id="letter-email">
+      <input class="email-field" type="email" name="email" placeholder="email@example.com" id="letter-email">
     </p>
     <p class="write-us-field">
       <label for="letter-text">Текст письма:</label>
       <textarea name="text" placeholder="В свободной форме" id="letter-text"></textarea>
     </p>
     <div class="btn-wrap">
-      <button class="buttons btn-order-placement" type="submit">Оформить заказ</button>
+      <button class="buttons btn-order-placement" type="submit">Отправить</button>
     </div>
   </form>
-  <button type="button" name="Закрыть">Закрыть окно</button>
+  <button class="pop-up-close" type="button" aria-label="Закрыть окно"></button>
 </section>
 
 <section class="pop-up pop-up-map">
   <h2 class="visually-hidden">Модальное окно карты</h2>
-  <img src="img/map.png" width="943" height="449" alt="Карта">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1591274585419!5m2!1sru!2sru" width="943" height="449">Карта</iframe>
-  <button type="button" name="Закрыть">Закрыть окно</button>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
+    width="943" height="449" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
+  <p><img src="img/map.png" width="943" height="449" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
+  <button class="pop-up-close" type="button" aria-label="Закрыть окно"></button>
 </section>
 
 <section class="pop-up pop-up-cart">
@@ -438,8 +441,11 @@
     <button class="buttons btn-order-placement" type="button" name="Оформить заказ">Оформить заказ</button>
     <button class="buttons btn-continue-shopping" type="button" name="Продолжить покупки">Продолжить покупки</button>
   </div>
-  <button type="button" name="Закрыть">Закрыть окно</button>
+  <button class="pop-up-close" type="button" aria-label="Закрыть окно"></button>
 </section>
 
+
+    <script src="js/write-us.js" type="text/javascript"></script>
+    <script src="js/map.js" type="text/javascript"></script>
   </body>
 </html>
