@@ -269,7 +269,7 @@ input[type="radio"].visually-hidden {
   background-color: var(--special-success);
 }
 
-.order-button:active {
+.order-menu .order-button:active {
   background-color: var(--basic-green);
 }
 
