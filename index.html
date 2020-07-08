@@ -34,7 +34,7 @@
 
       <section class="container">
           <div class="header-content">
-            <h1 class="caption">Интернет-магазин строительных материалов<br> и инструментов для ремонта</h2>
+            <h1 class="caption">Интернет-магазин строительных материалов<br> и инструментов для ремонта</h1>
 
             <div class="contacts">
               <div class="phone-number">
@@ -83,7 +83,7 @@
 
     <main>
       <div class="features container">
-        <div class="features-item materials">
+        <div class="features-item materials new">
           <h3>Материалы</h3>
           <a href="#">На любой вкус</a>
         </div>
@@ -97,6 +97,7 @@
         </div>
 
         <article class="features-list slider">
+          <h2 class="visually-hidden">Предварительный просмотр инструментов</h2>
           <figure class="slider-item drill visually-hidden">
             <figcaption>Дрели</figcaption>
             <img src="img/drill.jpg" width="620" height="266" alt="Дрели">
@@ -376,8 +377,8 @@
               <li>
                 <a class="social-btn vk" href="#" title="Вконтакте">
                   <span class="visually-hidden">Вконтакте</span>
-                  <!--<svg width="27" height="16" viewBox="0 0 128 76"><path d="M125,5.15c.89-3,0-5.15-4.23-5.15h-14a6,6,0,0,0-6.09,4S93.59,21.31,83.5,32.59c-3.26,3.26-4.74,4.3-6.52,4.3-.89,0-2.18-1-2.18-4V5.15c0-3.56-1-5.15-4-5.15h-22a3.37,3.37,0,0,0-3.56,3.22c0,3.37,5,4.15,5.56,13.64V37.48c0,4.52-.82,5.34-2.6,5.34-4.74,0-16.29-17.43-23.13-37.38C23.72,1.57,22.38,0,18.8,0H4.8C.8,0,0,1.88,0,4c0,3.71,4.75,22.1,22.1,46.42C33.67,67,50,76,64.8,76c8.9,0,10-2,10-5.45V58c0-4,.84-4.8,3.66-4.8,2.08,0,5.64,1,13.94,9C101.9,71.74,103.46,76,108.8,76h14c4,0,6-2,4.85-6s-5.8-9.64-11.81-16.4c-3.27-3.86-8.16-8-9.64-10.09-2.08-2.67-1.49-3.86,0-6.23,0,0,17-24,18.83-32.18Z" fill="#fff"/></svg>
-                --></a>
+                  <svg width="27" height="16" viewBox="0 0 128 76"><path d="M125,5.15c.89-3,0-5.15-4.23-5.15h-14a6,6,0,0,0-6.09,4S93.59,21.31,83.5,32.59c-3.26,3.26-4.74,4.3-6.52,4.3-.89,0-2.18-1-2.18-4V5.15c0-3.56-1-5.15-4-5.15h-22a3.37,3.37,0,0,0-3.56,3.22c0,3.37,5,4.15,5.56,13.64V37.48c0,4.52-.82,5.34-2.6,5.34-4.74,0-16.29-17.43-23.13-37.38C23.72,1.57,22.38,0,18.8,0H4.8C.8,0,0,1.88,0,4c0,3.71,4.75,22.1,22.1,46.42C33.67,67,50,76,64.8,76c8.9,0,10-2,10-5.45V58c0-4,.84-4.8,3.66-4.8,2.08,0,5.64,1,13.94,9C101.9,71.74,103.46,76,108.8,76h14c4,0,6-2,4.85-6s-5.8-9.64-11.81-16.4c-3.27-3.86-8.16-8-9.64-10.09-2.08-2.67-1.49-3.86,0-6.23,0,0,17-24,18.83-32.18Z" fill="#fff"/></svg>
+                </a>
               </li>
               <li>
                 <a class="social-btn" href="#" title="Фейсбук">
@@ -401,42 +402,43 @@
                 Разработано —<br>
                 <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
               </p>
+            </div>
           </div>
         </div>
       </div>
     </footer>
 
-<section class="pop-up pop-up-write">
-  <h2 class="visually-hidden">Напишите нам</h2>
-  <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
-    <p class="write-us-field">
-      <label for="letter-name">Ваше имя:</label>
-      <input class="name-field" type="text" name="name" placeholder="Имя Фамилия" id="letter-name">
-    </p>
-    <p class="write-us-field">
-      <label for="letter-email">Ваш e-mail:</label>
-      <input class="email-field" type="email" name="email" placeholder="email@example.com" id="letter-email">
-    </p>
-    <p class="write-us-field">
-      <label for="letter-text">Текст письма:</label>
-      <textarea name="text" placeholder="В свободной форме" id="letter-text"></textarea>
-    </p>
-    <div class="btn-wrap">
-      <button class="buttons btn-order-placement" type="submit">Отправить</button>
-    </div>
-  </form>
-  <button class="pop-up-close" type="button" aria-label="Закрыть окно"></button>
-</section>
+    <section class="pop-up pop-up-write">
+      <h2 class="visually-hidden">Напишите нам</h2>
+      <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="write-us-field">
+          <label for="letter-name">Ваше имя:</label>
+          <input class="name-field" type="text" name="name" placeholder="Имя Фамилия" id="letter-name">
+        </p>
+        <p class="write-us-field">
+          <label for="letter-email">Ваш e-mail:</label>
+          <input class="email-field" type="email" name="email" placeholder="email@example.com" id="letter-email">
+        </p>
+        <p class="write-us-field">
+          <label for="letter-text">Текст письма:</label>
+          <textarea name="text" placeholder="В свободной форме" id="letter-text"></textarea>
+        </p>
+        <div class="btn-wrap">
+          <button class="buttons btn-order-placement" type="submit">Отправить</button>
+        </div>
+      </form>
+      <button class="pop-up-close" type="button" aria-label="Закрыть окно"></button>
+    </section>
 
-<section class="pop-up pop-up-map">
-  <h2 class="visually-hidden">Модальное окно карты</h2>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
-    width="943" height="449" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
-  <p><img src="img/map.png" width="943" height="449" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
-  <button class="pop-up-close" type="button" aria-label="Закрыть окно"></button>
-</section>
+    <section class="pop-up pop-up-map">
+      <h2 class="visually-hidden">Модальное окно карты</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
+        width="943" height="449" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
+      <p><img src="img/map.png" width="943" height="449" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
+      <button class="pop-up-close" type="button" aria-label="Закрыть окно"></button>
+    </section>
 
-<section class="pop-up pop-up-cart">
+    <section class="pop-up pop-up-cart">
   <h2 class="visually-hidden">Модальное окно корзины</h2>
   <p>Товар добавлен в корзину!</p>
   <div class="btn-wrap">
@@ -444,10 +446,11 @@
     <button class="buttons btn-continue-shopping" type="button" name="Продолжить покупки">Продолжить покупки</button>
   </div>
   <button class="pop-up-close" type="button" aria-label="Закрыть окно"></button>
-</section>
+    </section>
 
 
-    <script src="js/write-us.js" type="text/javascript"></script>
-    <script src="js/map.js" type="text/javascript"></script>
+    <script src="js/write-us.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/cart.js"></script>
   </body>
 </html>
