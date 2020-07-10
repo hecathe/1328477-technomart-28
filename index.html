@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
   </head>
   <body class="page-body">
 
@@ -18,15 +18,17 @@
           </a>
 
           <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-            <p class="search-field">
-              <input id="btn-search" type="text" name="search" placeholder="Поиск:">
+              <input id="btn-search" type="search" name="search" placeholder="Поиск:">
               <label for="btn-search" aria-label="Поиск"></label>
-            </p>
           </form>
 
           <div class="order-menu">
-            <a class="order-bookmarks" href="#">Закладки: 0</a>
-            <a class="order-cart" href="#">Корзина: 0</a>
+            <a class="order-bookmarks" href="#">Закладки:
+              <span>0</span>
+            </a>
+            <a class="order-cart" href="#">Корзина:
+              <span>0</span>
+            </a>
             <a class="order-button" href="#">Оформить заказ</a>
           </div>
         </div>
@@ -85,20 +87,20 @@
       <div class="features container">
         <div class="features-item materials new">
           <h3>Материалы</h3>
-          <a href="#" aria-label="Материалы">На любой вкус</a>
+          <a href="#" aria-label="На любой вкус">На любой вкус</a>
         </div>
-        <div class="features-item tools" aria-label="Инструмент">
+        <div class="features-item tools">
           <h3>Инструмент</h3>
-          <a href="#">На все случаи</a>
+          <a href="#" aria-label="Инструменты на все случаи">На все случаи</a>
         </div>
-        <div class="features-item technics" aria-label="Техника">
+        <div class="features-item technics">
           <h3>Техника</h3>
-          <a href="#">Для стройки</a>
+          <a href="#" aria-label="Техника для стройки">Для стройки</a>
         </div>
 
         <article class="features-list slider">
           <h2 class="visually-hidden">Промо-блок</h2>
-          <figure class="slider-item drill visually-hidden">
+          <figure class="slider-item drill ">
             <figcaption>Дрели</figcaption>
             <img src="img/drill.jpg" width="620" height="266" alt="Дрели">
             <p>Соседям на радость!</p>
@@ -112,18 +114,18 @@
           <button class="gallery-button gallery-button-back" type="button" aria-label="Назад"></button>
           <button class="gallery-button gallery-button-next" type="button" aria-label="Вперед"></button>
           <ul class="slider-indicators">
-            <li class="indicator-item" aria-label="Первый слайд"></li>
-            <li class="indicator-item current" aria-label="Второй слайд"></li>
+            <li class="indicator-item"></li>
+            <li class="indicator-item current"></li>
           </ul>
         </article>
 
-        <div class="features-item sale" aria-label="Товары со скидкой 50%">
+        <div class="features-item sale">
           <h3>Скидки 50%</h3>
-          <a href="#">На 350 товаров</a>
+          <a href="#" aria-label="Скидка 50% на 350 товаров">На 350 товаров</a>
         </div>
-        <div class="features-item features-delivery" aria-label="Доставка">
+        <div class="features-item features-delivery">
           <h3>Доставка</h3>
-          <a href="#">Бесплатно</a>
+          <a href="#" aria-label="Доставка бесплатно">Бесплатно</a>
         </div>
       </div>
 
@@ -436,18 +438,18 @@
     </section>
 
     <section class="pop-up pop-up-cart">
-  <h2 class="visually-hidden">Модальное окно корзины</h2>
-  <p>Товар добавлен в корзину!</p>
-  <div class="btn-wrap">
-    <button class="buttons btn-order-placement" type="button" name="Оформить заказ">Оформить заказ</button>
-    <button class="buttons btn-continue-shopping" type="button" name="Продолжить покупки">Продолжить покупки</button>
-  </div>
-  <button class="pop-up-close" type="button" aria-label="Закрыть окно"></button>
+      <h2 class="visually-hidden">Модальное окно корзины</h2>
+      <p>Товар добавлен в корзину!</p>
+      <div class="btn-wrap">
+        <button class="buttons btn-order-placement" type="button" name="Оформить заказ">Оформить заказ</button>
+        <button class="buttons btn-continue-shopping" type="button" name="Продолжить покупки">Продолжить покупки</button>
+      </div>
+      <button class="pop-up-close" type="button" aria-label="Закрыть окно"></button>
     </section>
 
 
-    <script src="js/write-us.js"></script>
-    <script src="js/map.js"></script>
-    <script src="js/cart.js"></script>
+    <script src="js/writeus.min.js"></script>
+    <script src="js/map.min.js"></script>
+    <script src="js/cart.min.js"></script>
   </body>
 </html>

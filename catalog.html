@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
   </head>
   <body class="page-body inner-page">
 
@@ -18,16 +18,18 @@
             </a>
 
             <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-              <p class="search-field">
-                <input id="btn-search" type="text" name="search" placeholder="Поиск:">
-                <label class="visually-hidden" for="btn-search">Поиск</label>
-              </p>
+                <input id="btn-search" type="search" name="search" placeholder="Поиск:">
+                <label for="btn-search" aria-label="Поиск"></label>
             </form>
 
 
             <div class="order-menu">
-              <a class="order-bookmarks" href="#">Закладки: 0</a>
-              <a class="order-cart" href="#">Корзина: 0</a>
+              <a class="order-bookmarks" href="#">Закладки:
+                <span>0</span>
+              </a>
+              <a class="order-cart product-in" href="#">Корзина:
+                <span>10</span>
+              </a>
               <a class="order-button" href="#">Оформить заказ</a>
             </div>
           </div>
@@ -118,11 +120,11 @@
 
                 <div class="price-controls">
                   <label class="min-price">
-                    <input type="number" name="min-price" value="0" step="100">
+                    <input type="number" name="min-price" value="0" step="500">
                   </label>
                   <div class="dash">_</div>
                   <label class="max-price">
-                    <input type="number" name="max-price" value="30000" step="100">
+                    <input type="number" name="max-price" value="30000" step="500">
                   </label>
                 </div>
               </div>
@@ -444,6 +446,6 @@
       <button class="pop-up-close" type="button" aria-label="Закрыть окно"></button>
     </section>
 
-    <script src="js/cart.js"></script>
+    <script src="js/cart.min.js"></script>
   </body>
 </html>
