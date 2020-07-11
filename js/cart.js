@@ -16,7 +16,7 @@ for(var i = 0; i <= buyLink.length; i++) {
   contShopping.addEventListener("click", function (evt) {
     evt.preventDefault();
     cartPopup.classList.remove("pop-up-show");
-  })
+  });
 
   window.addEventListener("keydown", function(evt) {
     if (evt.keyCode === 27) {
